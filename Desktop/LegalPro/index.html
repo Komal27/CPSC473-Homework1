@@ -5,125 +5,116 @@
 </title>
 
 <head>
+  <script src="js/jQuery.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Container -->
+  <div class="container">
+    <!--OuterPage-->
+    <div class="mainpage">
+
+      <!--Logo-->
+      <div class="logo">
+        <img src="img/logo.png" alt="LegalPro">
+      </div>
+      <!--logo-->
+
+      <!--Navbar-->
+      <nav>
+        <a href="index.html"> About You </a>
+        <a href="#">Your Plan </a>
+        <a href="#"> Payment </a>
+        <a href="#">Memeber Dashboard </a>
+
+      </nav>
+      <!--navbar-->
+
+      <!--Heading-->
+
+      <header>
+        Tell us more about yourself
+      </header>
+      <!--heading-->
+
+      <div class="intro">
+        <p>We are looking forward to helping you worry less about legal issues and focus on growing up your business. Signing up takes only a couple of minutes and you are done</p>
+      </div>
+      <!--intro-->
+
+      <!--Intro-->
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!--CSS-->
-  <link href="css/style.css" rel="stylesheet">
+      <div class="form-container">
+        <div class="column1">
+          <form class="about-you-form" action="index.html" method="post">
 
-<!-- Container -->
-<div class="container">
-  <!--OuterPage-->
-  <div class="mainpage">
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Confirm Email">
+            <input type="text" placeholder="Mailing Address1">
+            <input type="text" placeholder="Mailing Address2">
+            <input type="text" placeholder="City">
+            <input id="state-input" type="text" placeholder="State">
+            <input id="zip-input" type="text" placeholder="Zip">
+            <input type="text" placeholder="Business Name(optional)">
 
-    <!--Logo-->
-  <div class="logo">
-    <img src="img/logo.png" alt="LegalPro" height="30">
-  </div> <!--logo-->
+            <div class="i-am-a">
+              <p class="i-am">
+                I am a:
+                <input type="radio" class="name"> an Individual </input>
+                <input type="radio" class="name"> a Business </input>
 
-<!--Navbar-->
-  <nav class="navbar">
-    <ul class="menu_items">
-      <li class="about_you"><a href="index.html"> About You </a> </li>
-      <li class="your_plan"> <a href="#">Your Plan </a> </li>
-      <li class="payment"> <a href="#"> Payment </a> </li>
-      <li class="member"> <a href="#">Memeber Dashboard </a></li>
+              </p>
+            </div>
+          </form>
+        </div>
+        <!-- column1-->
+
+        <div class="column2">
+          <div class="img-quote">
+            <img src="img/quote.png" class="quote">
+            <p class="description">We created Zero Ground Coffee with adipisicing elit sed do eius mod tempor incididunt ut labore et dolore magna...
+
+              <br> <strong>Joel Garcia</strong>
+              <br> Zero Ground Coffee </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class='form-buttons'>
+        <input type="submit" value="Continue" class="btn-continue" />
+      </div>
+    </div>
+    <!-- Main Page -->
+    <!-- Form-->
+
+  </div>
+  <!-- Container-->
+  <!--Footer-->
+
+  <div class="footer">
+
+    <ul class="list">
+
+      <img src="img/logo.png" alt="LegalPro" height="18px">
+      <a href="#">&copy Legal Pro 2017 </a>
+      <a href="#">Pricing</a>
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+      <a href="#">Jobs</a>
+      <a href="#">Contact</a>
+      <a href="#">Legal</a>
+      <a href="#">Privacy Policy</a>
+
     </ul>
-  </nav> <!--navbar-->
-
-<!--Heading-->
-  <div class="heading">
-    <p> Tell us more about yourself </p>
-  </div> <!--heading-->
-
-<!--Intro-->
-  <div class="intro">
-    <p> We are looking forward to helping you worry less about legal issues and focus on growing up your
-      business.
-      <br><br>
-      Signing up takes only a couple of minutes and you are done</p>
-  </div> <!--intro-->
-
-<!-- Form-->
-<div class="wrapper">
-  <div class="row">
-
-<div class = "column1">
-  <div class = "element">
-    <input type="text" value = "First Name" class= "fields">
-    <input type="text" value = "Last Name" class= "fields">
   </div>
 
-  <div class = "element">
-    <input type="text" value = "Email" class="fields">
-    <input type="text" value = "Confirm Email" class="fields">
-  </div>
 
-  <div class = "element">
-    <input type="text" value = "Mailing Address1" class= "fields">
-    <input type="text" value = "Mailing Address2" class="fields">
-  </div>
-
-  <div class = "element">
-    <input type="text" value = "City" class= "fields">
-    <input type="text" value = "State" class="state">
-    <input type="text" value = "Zip" class="zip">
-  </div>
-
-  <div class = "element">
-    <input type="text" value = "Business Name (optional)" class= "fields">
-  </div>
-
-  <div class = "element">
-    <p class="checkbox">
-      I am a:
-      <input type = "checkbox" class="name"> an Individual </input>
-      <input type = "checkbox" class="name"> a Business </input>
-    </p>
-  </div>
-</div>
-
-<div class="column2">
-  <div class="image">
-    <img src="img/quote.png">
-  </div>
-<div class="info"> We created Zero Ground Coffee with adipisicing elit
-  sed do eius mod tempor incididunt ut labore
-  et dolore magna..
-  <br>
-<strong style="color:black"> Joel Garcia</strong>
-<br>
-Zero Ground Coffee
-</div>
-</div>
-
-</div> <!--row-->
-</div> <!-- wrapper-->
-<div class='form-buttons'>
-  <input type = "submit" value = "Continue" class = "btn-continue" />
-</div>
-</div> <!-- Container -->
-<!-- Form-->
-
-
-<!--Footer-->
-<div class="footer">
-
-<ul class="list">
-  <hr width="70%">
-  <img src="img/logo.png" alt="LegalPro" height="18px">
-   <a href="#">&copy Legal Pro 2017 </a>
-   <a href="#">Pricing</a>
-   <a href="#">Blog</a>
-   <a href="#">About</a>
-   <a href="#">Jobs</a>
-   <a href="#">Contact</a>
-   <a href="#">Legal</a>
-   <a href="#">Privacy Policy</a>
-</ul>
-</div> <!--Footer-->
 </html>
